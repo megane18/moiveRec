@@ -118,9 +118,9 @@ load_dotenv()
 
 # Access variables
 tmdb_access_token = st.secrets["general"]["TMDB_ACCESS_TOKEN"]
-neo4j_uri = st.secrets["general"]["NEO4J_URI"]
-neo4j_user = st.secrets["general"]["NEO4J_USER"]
-neo4j_password = st.secrets["general"]["NEO4J_PASSWORD"]
+neo4j_uri = st.secrets["general"]["NEO4J_URI2"]
+neo4j_user = st.secrets["general"]["NEO4J_USER2"]
+neo4j_password = st.secrets["general"]["NEO4J_PASSWORD2"]
 email_user = st.secrets["general"]["EMAIL_USER"]
 email_password = st.secrets["general"]["EMAIL_PASSWORD"]
 email_receiver = st.secrets["general"]["EMAIL_RECEIVER"]
