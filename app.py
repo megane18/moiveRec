@@ -3,7 +3,6 @@ import pandas as pd
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
 import os
-import toml
 import plotly.express as px
 import smtplib
 from email.mime.text import MIMEText
@@ -115,17 +114,17 @@ load_dotenv()
 
 
 # Load the secrets.toml file
-secrets = toml.load("secrets.toml")
+
 
 # Access variables
-tmdb_access_token = secrets["general"]["TMDB_ACCESS_TOKEN"]
-neo4j_uri = secrets["general"]["NEO4J_URI"]
-neo4j_user = secrets["general"]["NEO4J_USER"]
-neo4j_password = secrets["general"]["NEO4J_PASSWORD"]
-email_user = secrets["general"]["EMAIL_USER"]
-email_password = secrets["general"]["EMAIL_PASSWORD"]
-email_receiver = secrets["general"]["EMAIL_RECEIVER"]
-debug = secrets["general"]["DEBUG"]
+tmdb_access_token = st.secrets["general"]["TMDB_ACCESS_TOKEN"]
+neo4j_uri = st.secrets["general"]["NEO4J_URI"]
+neo4j_user = st.secrets["general"]["NEO4J_USER"]
+neo4j_password = st.secrets["general"]["NEO4J_PASSWORD"]
+email_user = st.secrets["general"]["EMAIL_USER"]
+email_password = st.secrets["general"]["EMAIL_PASSWORD"]
+email_receiver = st.secrets["general"]["EMAIL_RECEIVER"]
+
 # neo4j_uri = os.getenv('NEO4J_URI2')
 # neo4j_user = os.getenv('NEO4J_USER2')
 # neo4j_password = os.getenv('NEO4J_PASSWORD2')
