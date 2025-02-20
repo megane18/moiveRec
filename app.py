@@ -135,7 +135,7 @@ load_dotenv()
 # email_receiver = st.secrets["EMAIL_RECEIVER"]
 
 tmdb_access_token = os.getenv("TMDB_ACCESS_TOKEN")
-neo4j_uri = os.getenv('NEO4J_URI2')
+neo4j_uri = os.getenv("NEO4J_URI2")
 neo4j_user = os.getenv('NEO4J_USER2')
 neo4j_password = os.getenv('NEO4J_PASSWORD2')
 email_password = os.getenv('EMAIL_PASSWORD')
